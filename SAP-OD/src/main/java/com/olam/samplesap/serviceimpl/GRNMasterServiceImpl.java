@@ -39,7 +39,13 @@ public class GRNMasterServiceImpl implements GRNMasterService {
 	@Override
 	public void sendInvoiceNumber(SAPGRNMasterEntity grnEntity) {
 		
-		grnMasterRepository.save(grnEntity);
+		grnMasterRepository.updateInvoiceNumber(grnEntity);
+		
+	}
+
+	@Override
+	public void getVendorAndTxDetails(SAPGRNMasterEntity grnEntity) {
+		//grnMasterRepository.updateVendorTx
 		
 	}
 
